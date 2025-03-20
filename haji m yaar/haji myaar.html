@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shajra-e-Ghulam Farid</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url(images/bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure background image covers the container */
+        position: relative;
+      }
+
+      .tree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .generation {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .member {
+        text-align: center;
+        margin: 0 50px;
+        position: relative;
+        flex-wrap: wrap;
+      }
+
+      .member img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid #333;
+        transition: all 0.3s ease;
+        object-fit: cover;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .member img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* .member::before,
+        .member::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: #333;
+        } */
+      .member::before {
+        top: -20px;
+        left: 50%;
+      }
+
+      .member:first-child::before {
+        display: none;
+      }
+
+      .member::after {
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+      }
+
+      .member:last-child::after {
+        display: none;
+      }
+
+      .connector {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .connector .line {
+        height: 2px;
+        background: #333;
+        flex: 1;
+      }
+
+      .member p {
+        font-size: 20px;
+      }
+
+      p a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tree">
+      <!-- First Generation -->
+      <div class="generation">
+        <div class="member">
+          <img src="images/haji m yaar.jpg" alt="Grandparent" />
+          <p>Haji Muhammad Yaar</p>
+        </div>
+      </div>
+      <!-- Second Generation -->
+      <div class="connector">
+        <div class="line"></div>
+      </div>
+
+      <div class="generation">
+        <div class="member">
+          <a href="mujtaba/mujtaba.html">
+            <img src="images/mujtaba.jpg" alt="Parent 1"
+          /></a>
+          <p><a href="mujtaba/mujtaba.html">Ghulam Mujtaba</a></p>
+        </div>
+
+        <div class="member">
+          <a href="mustafa/mustafa.html"
+            ><img src="images/mustafa.jpg" alt="Parent 2"
+          /></a>
+          <p><a href="mustafa/mustafa.html">Ghulam Mustafa</a></p>
+        </div>
+
+        <div class="member">
+          <img src="images/zawar.jpg" alt="Parent 1" />
+          <p>Zawar Hussain</p>
+        </div>
+        <div class="member">
+          <a href="zahid/zahid.html"
+            ><img src="images/zahid.jpg" alt="Parent 2"
+          /></a>
+          <p><a href="zahid/zahid.html">Zahid Rasool</a></p>
+        </div>
+      </div>
+
+      <div class="generation">
+        <div class="member">
+          <a href="murtaza/murtaza.html">
+            <img src="images/murtaza.jpg" alt="Parent 1"
+          /></a>
+          <p><a href="murtaza/murtaza.html">Ghulam Murtaza</a></p>
+        </div>
+        <div class="member">
+          <img src="images/ahmad yar.jpg" alt="Parent 2" />
+          <p>Anwar Hussain</p>
+        </div>
+
+        <div class="member">
+          <a href="abrar/abrar.html"
+            ><img src="images/abrar.jpg" alt="Parent 2"
+          /></a>
+          <p><a href="abrar/abrar.html">Abrar Hussain</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shajra-e-Ghulam Farid</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg,
+                    #335580,
+                    /* Soft Navy Blue */
+                    #4a90e2,
+                    /* Light Blue */
+                    #092d5c);
+        }
+
+
+        .tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .generation {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .member {
+            text-align: center;
+            margin: 0 50px;
+            position: relative;
+
+        }
+
+        .member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            transition: all 0.3s ease;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .member img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* .member::before,
+        .member::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: #333;
+        } */
+        .member::before {
+            top: -20px;
+            left: 50%;
+        }
+
+        .member:first-child::before {
+            display: none;
+        }
+
+        .member::after {
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
+        }
+
+        .member:last-child::after {
+            display: none;
+        }
+
+        .connector {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .connector .line {
+            height: 2px;
+            background: #333;
+            flex: 1;
+        }
+
+        .member p {
+            font-size: 20px;
+
+
+        }
+
+        p a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tree">
+        <!-- First Generation -->
+        <div class="generation">
+            <div class="member">
+                <img src="images/ahmad yar.jpg" alt="Grandparent">
+                <p>Ahmad Yaar</p>
+            </div>
+        </div>
+        <!-- Second Generation -->
+        <div class="connector">
+            <div class="line"></div>
+        </div>
+
+
+        <div class="generation">
+            <div class="member">
+                <a href="saleem/saleem.html"> <img src="images/Sajad.jpg" alt="Parent 1"></a>
+                <p><a href="saleem/saleem.html">Muhammad Saleem</a></p>
+            </div>
+
+            <div class="member">
+                <img src="images/aftab.jpg" alt="Parent 2">
+                <p>Muhammad Naeem</p>
+            </div>
+
+            <div class="member">
+                <img src="images/atiq.jpg"Parent 2">
+                <p>Muhammad Asif</p>
+            </div>
+
+
+        </div>
+
+        <div class="generation">
+            <div class="member">
+                <a href="naeem/naeem.html"><img src="images/khaliq.jpg" alt="Parent 1"></a>
+                <p>Muhammad Waseem</p>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shajra-e-Ghulam Farid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg,
+                    #335580,
+                    /* Soft Navy Blue */
+                    #4a90e2,
+                    /* Light Blue */
+                    #092d5c
+                    /* Sky Blue */
+                );
+
+        }
+
+        .tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .generation {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            flex-direction: row;
+        }
+
+        .member {
+            text-align: center;
+            margin: 0 50px;
+            position: relative;
+        }
+
+        .member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid #333;
+        }
+
+        /* .member::before,
+        .member::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: #333;
+        } */
+        .member::before {
+            top: -20px;
+            left: 50%;
+        }
+
+        .member:first-child::before {
+            display: none;
+        }
+
+        .member::after {
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
+        }
+
+        .member:last-child::after {
+            display: none;
+        }
+
+        .connector {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .connector .line {
+            height: 2px;
+            background: #333;
+            flex: 1;
+        }
+
+        .member p {
+            font-size: larger;
+
+
+        }
+
+        p a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tree">
+        <!-- First Generation -->
+        <div class="generation">
+            <div class="member">
+                <img src="images/mushtaq.jpg" alt="Grandparent">
+                <p>Muhammad Mushtaq</p>
+            </div>
+        </div>
+        <!-- Second Generation -->
+        <div class="connector">
+            <div class="line"></div>
+        </div>
+
+
+        <div class="generation">
+            <div class="member">
+                <img src="images/shaheer.jpg" alt="Parent 1">
+                <p>Muhammad Shaheer</p>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

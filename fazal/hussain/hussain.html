@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shajra-e-Ghulam Farid</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            /* background: linear-gradient(135deg,#335580, #4a90e2,#092d5c); */
+            background-image: url("images/bg.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Ensure background image covers the container */
+            position: relative;
+        }
+
+        .tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .generation {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            text-align: center;
+            margin: 0 50px;
+            position: relative;
+        }
+
+        .member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            transition: all 0.3s ease;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .member img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* .member::before,
+        .member::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: #333;
+        } */
+        .member::before {
+            top: -20px;
+            left: 50%;
+        }
+
+        .member:first-child::before {
+            display: none;
+        }
+
+        .member::after {
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
+        }
+
+        .member:last-child::after {
+            display: none;
+        }
+
+        .connector {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .connector .line {
+            height: 2px;
+            background: #333;
+            flex: 1;
+        }
+
+        .member p {
+            font-size: 20px;
+        }
+
+        p a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tree">
+        <!-- First Generation -->
+        <div class="generation">
+            <div class="member">
+                <img src="images/husain.jpg" alt="Grandparent" />
+                <p>Muhhamad Hussain</p>
+            </div>
+        </div>
+        <!-- Second Generation -->
+        <div class="connector">
+            <div class="line"></div>
+        </div>
+
+        <div class="generation">
+            <div class="member">
+                <a href=""><img src="images/haseeb.jpg" alt="Parent 1" /></a>
+                <p><a href="">Muhammad Haseeb/a></p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

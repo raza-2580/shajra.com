@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shajra-e-Ghulam Farid</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url(images/bg\ copy.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure background image covers the container */
+        position: relative;
+      }
+
+      .tree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .generation {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .member {
+        text-align: center;
+        margin: 0 50px;
+        position: relative;
+      }
+
+      .member img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid #333;
+      }
+
+      /* .member::before,
+              .member::after {
+                  content: "";
+                  position: absolute;
+                  width: 2px;
+                  height: 20px;
+                  background: #333;
+              } */
+      .member::before {
+        top: -20px;
+        left: 50%;
+      }
+
+      .member:first-child::before {
+        display: none;
+      }
+
+      .member::after {
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+      }
+
+      .member:last-child::after {
+        display: none;
+      }
+
+      .connector {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .connector .line {
+        height: 2px;
+        background: #333;
+        flex: 1;
+      }
+
+      .member p {
+        font-size: 20px;
+      }
+
+      p a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tree">
+      <!-- First Generation -->
+      <div class="generation">
+        <div class="member">
+          <img src="images/amanulah.jpg" alt="Grandparent" />
+          <p>Amaan Ullah</p>
+        </div>
+      </div>
+      <!-- Second Generation -->
+      <div class="connector">
+        <div class="line"></div>
+      </div>
+
+      <div class="generation">
+        <div class="member">
+          <a href="razaq/razaq.html"
+            ><img src="images/razaq.jpg" alt="Parent 1"
+          /></a>
+          <p><a href="razaq/razaq.html">Razaq Ahmed</a></p>
+        </div>
+
+        <div class="member">
+          <a href="ishfaq/ishfaq.html"
+            ><img src="images/ishfaq.jpg" alt="Parent 2"
+          /></a>
+          <p><a href="ishfaq/ishfaq.html">Ishfaq Ahmed</a></p>
+        </div>
+
+        <div class="member">
+          <a href="mushtaq/mushtaq.html"
+            ><img src="images/mushtaq.jpg" alt="Parent 1"
+          /></a>
+          <p><a href="mushtaq/mushtaq.html">Mushtaq Ahmed</a></p>
+        </div>
+        <div class="member">
+          <img src="images/jaleel.jpg" alt="Parent 2" />
+          <p><a href="">Jaleel Ahmed</a></p>
+        </div>
+      </div>
+
+      <div class="generation">
+        <div class="member">
+          <a href="tanveer/tanveer.html"
+            ><img src="images/tanveer2.jpg" alt="Parent 1"
+          /></a>
+          <p><a href="tanveer/tanveer.html">Tanveer Ahmed</a></p>
+        </div>
+        <div class="member">
+          <a href="kashif/kashif.html"
+            ><img src="images/kashif.jpg" alt="Parent 2"
+          /></a>
+          <p><a href="kashif/kashif.html">Muhammad Kashif Javed</a></p>
+        </div>
+
+        <div class="member">
+          <img src="images/rasheed.jpg" alt="Parent 1" />
+          <p><a href="">Muhammad Haroon Rasheed</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
